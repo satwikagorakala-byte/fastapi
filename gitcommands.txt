@@ -1,0 +1,55 @@
+git config --global user.name "Gorakala Satwika"
+git config --global user.email "satwikagorakala@gmail.com"
+
+
+git init
+git status
+
+git add . #stage files
+git commit -m "Initial commit with main.py" #commit
+
+#https://github.com/satwikagorakala-byte/fastapi.git
+#link your local git repo with online repo
+git remote add origin https://github.com/satwikagorakala-byte/fastapi.git
+
+#check remote status - one time activity
+git remote -v
+#check branch
+git branch
+#push code to git
+git push -u origin main
+
+
+#rename master to main branch
+git branch -M main
+git push -u origin main
+
+
+
+#create and working on new branch
+git branch
+
+git checkout -b featurebranch
+
+#make changes
+git status
+git add .
+git commit -m "Added add function"
+
+git push -u origin featurebranch
+git checkout main
+
+#pull latest changes from online to local main branch
+git pull origin main
+
+#merge featurebranch to main branch in local
+git merge featurebranch
+
+#push main branch from local to online
+git push origin main
+
+
+
+
+
+
